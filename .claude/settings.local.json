@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(del test_server.py)",
+      "Bash(del simple_server.py)",
+      "Bash(del run_app.py)",
+      "Bash(rm:*)"
+    ],
+    "deny": []
+  }
+}

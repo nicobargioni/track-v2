@@ -1,0 +1,1322 @@
+{
+  "esteban@nomadic.agency": {
+    "asana_ids": [
+      "1135655662306900"
+    ],
+    "slack_ids": [
+      "UMC8ABJQG"
+    ]
+  },
+  "ivan@nomadic.agency": {
+    "asana_ids": [
+      "1136018604011037"
+    ],
+    "slack_ids": [
+      "UME4BC407"
+    ]
+  },
+  "rocio@nomadic.agency": {
+    "asana_ids": [
+      "1151800419832369"
+    ],
+    "slack_ids": [
+      "UR2Q4TVS8"
+    ]
+  },
+  "pablo.altieri@diagonalminds.com": {
+    "asana_ids": [
+      "1130042370353328"
+    ],
+    "slack_ids": [
+      "UQZ4354U9"
+    ]
+  },
+  "nico@nomadic.agency": {
+    "asana_ids": [
+      "1189529235923826"
+    ],
+    "slack_ids": [
+      "U019PNT3SQG"
+    ]
+  },
+  "hernan@nomadic.agency": {
+    "asana_ids": [
+      "1200096899262902"
+    ],
+    "slack_ids": [
+      "U01EDTC7MFH"
+    ]
+  },
+  "luz@soyhenry.com": {
+    "asana_ids": [
+      "1196713781405751"
+    ],
+    "slack_ids": [
+      "U01GC1ETK3K"
+    ]
+  },
+  "fmarciani@soyhenry.com": {
+    "asana_ids": [
+      "1200111728440320"
+    ],
+    "slack_ids": [
+      "U01HBCQ19FE"
+    ]
+  },
+  "luis@nomadic.agency": {
+    "asana_ids": [
+      "1200247793768459"
+    ],
+    "slack_ids": [
+      "U01V668DKPX"
+    ]
+  },
+  "paula@nomadic.agency": {
+    "asana_ids": [
+      "1200271874552425"
+    ],
+    "slack_ids": [
+      "U01EW05Q550"
+    ]
+  },
+  "ignacio@nomadic.agency": {
+    "asana_ids": [
+      "1200276102916886"
+    ],
+    "slack_ids": [
+      "U020V3XDV1A"
+    ]
+  },
+  "pda@pablopda.com.ar": {
+    "asana_ids": [
+      "46645582530812"
+    ],
+    "slack_ids": []
+  },
+  "florencia@nomadic.agency": {
+    "asana_ids": [
+      "1200353589365432"
+    ],
+    "slack_ids": [
+      "U022A0TBGBW"
+    ]
+  },
+  "sclark@soyhenry.com": {
+    "asana_ids": [
+      "1200549687038630"
+    ],
+    "slack_ids": [
+      "U026VBWKR35"
+    ]
+  },
+  "lucila@nomadic.agency": {
+    "asana_ids": [
+      "1200567607623698"
+    ],
+    "slack_ids": [
+      "U026LLNF9JA"
+    ]
+  },
+  "damian@nomadic.agency": {
+    "asana_ids": [
+      "1200567523437359"
+    ],
+    "slack_ids": [
+      "U026XJC298V"
+    ]
+  },
+  "cinthia@nomadic.agency": {
+    "asana_ids": [
+      "1200706375723807"
+    ],
+    "slack_ids": [
+      "U02A13Y27HQ"
+    ]
+  },
+  "julieta@nomadic.agency": {
+    "asana_ids": [
+      "1200950133766809"
+    ],
+    "slack_ids": [
+      "U02D9F6S3JN"
+    ]
+  },
+  "lic.rosarioarce@gmail.com": {
+    "asana_ids": [
+      "1200903726424799"
+    ],
+    "slack_ids": []
+  },
+  "maria@nomadic.agency": {
+    "asana_ids": [
+      "1201119369347294"
+    ],
+    "slack_ids": [
+      "U02H5ADHGG0"
+    ]
+  },
+  "antonella@nomadic.agency": {
+    "asana_ids": [
+      "1201119996237042"
+    ],
+    "slack_ids": [
+      "U02GFLX0VT4"
+    ]
+  },
+  "nazifh@gmail.com": {
+    "asana_ids": [
+      "765482769521085"
+    ],
+    "slack_ids": [
+      "UU0716JJF"
+    ]
+  },
+  "sofia@nomadic.agency": {
+    "asana_ids": [
+      "1201311086573173"
+    ],
+    "slack_ids": [
+      "U02KTB3Q2S0"
+    ]
+  },
+  "mauro@nomadic.agency": {
+    "asana_ids": [
+      "1201311642698415"
+    ],
+    "slack_ids": [
+      "U02L3NLU8GZ"
+    ]
+  },
+  "diego@nomadic.agency": {
+    "asana_ids": [
+      "1201603074094655"
+    ],
+    "slack_ids": [
+      "U02SA7054SJ"
+    ]
+  },
+  "tyler@coverright.com": {
+    "asana_ids": [
+      "1201605540071105"
+    ],
+    "slack_ids": []
+  },
+  "tom@coverright.com": {
+    "asana_ids": [
+      "1201605540071109"
+    ],
+    "slack_ids": []
+  },
+  "alex@coverright.com": {
+    "asana_ids": [
+      "1201605540557948"
+    ],
+    "slack_ids": []
+  },
+  "josef@coverright.com": {
+    "asana_ids": [
+      "1201659347972680"
+    ],
+    "slack_ids": []
+  },
+  "silvia.baraldo@disney.com": {
+    "asana_ids": [
+      "1201682623112484"
+    ],
+    "slack_ids": []
+  },
+  "mariana.balieiro@disney.com": {
+    "asana_ids": [
+      "1201682623112486"
+    ],
+    "slack_ids": []
+  },
+  "mariel.castro@disney.com": {
+    "asana_ids": [
+      "592459552582920"
+    ],
+    "slack_ids": []
+  },
+  "miguel.vilela@disney.com": {
+    "asana_ids": [
+      "1208514928427294"
+    ],
+    "slack_ids": []
+  },
+  "gabriel.sa@disney.com": {
+    "asana_ids": [
+      "1181711756978354"
+    ],
+    "slack_ids": []
+  },
+  "veronica.madias@disney.com": {
+    "asana_ids": [
+      "1201682623112494"
+    ],
+    "slack_ids": []
+  },
+  "martin.segarra@disney.com": {
+    "asana_ids": [
+      "1201682623112496"
+    ],
+    "slack_ids": []
+  },
+  "mariaflorencia.ibanez@disney.com": {
+    "asana_ids": [
+      "1208514641427799"
+    ],
+    "slack_ids": []
+  },
+  "melina.iglesias@disney.com": {
+    "asana_ids": [
+      "1201682623112500"
+    ],
+    "slack_ids": []
+  },
+  "luciana.coraggio@disney.com": {
+    "asana_ids": [
+      "1201682717299684"
+    ],
+    "slack_ids": []
+  },
+  "florencia.g@nomadic.agency": {
+    "asana_ids": [
+      "1201694693784131"
+    ],
+    "slack_ids": [
+      "U02U183EFTP"
+    ]
+  },
+  "luciana@nomadic.agency": {
+    "asana_ids": [
+      "1201743780550155"
+    ],
+    "slack_ids": [
+      "U030CLCL5NU"
+    ]
+  },
+  "joyce.x.franca-nd@disney.com": {
+    "asana_ids": [
+      "1201830570725745"
+    ],
+    "slack_ids": []
+  },
+  "joyce.x.franca.-nd@disney.com": {
+    "asana_ids": [
+      "1201914157661556"
+    ],
+    "slack_ids": []
+  },
+  "agustin@nomadic.agency": {
+    "asana_ids": [
+      "1202035356704206"
+    ],
+    "slack_ids": [
+      "U038RT3FVDJ"
+    ]
+  },
+  "gabrielmerovingio@gmail.com": {
+    "asana_ids": [
+      "1202087315692900"
+    ],
+    "slack_ids": []
+  },
+  "rodrigo@nomadic.agency": {
+    "asana_ids": [
+      "1202118026104219"
+    ],
+    "slack_ids": [
+      "U03ASRV9746"
+    ]
+  },
+  "mel@omcomunicacion.digital": {
+    "asana_ids": [
+      "1201972171591739"
+    ],
+    "slack_ids": []
+  },
+  "carolina@omcomunicacion.digital": {
+    "asana_ids": [
+      "1200527338030960"
+    ],
+    "slack_ids": []
+  },
+  "proveedores@nomadic.agency": {
+    "asana_ids": [
+      "1202319297497126"
+    ],
+    "slack_ids": []
+  },
+  "angie.t@nomadic.agency": {
+    "asana_ids": [
+      "1202438412231434"
+    ],
+    "slack_ids": [
+      "U03K1EQ7092"
+    ]
+  },
+  "leomerly@nomadic.agency": {
+    "asana_ids": [
+      "1202439361155343"
+    ],
+    "slack_ids": []
+  },
+  "karen@omcomunicacion.digital": {
+    "asana_ids": [
+      "1201950651078577"
+    ],
+    "slack_ids": []
+  },
+  "victoria.priano@disney.com": {
+    "asana_ids": [
+      "1202631095237141"
+    ],
+    "slack_ids": []
+  },
+  "melina@omcomunicacion.digital": {
+    "asana_ids": [
+      "1201190977505978"
+    ],
+    "slack_ids": []
+  },
+  "matias.r@nomadic.agency": {
+    "asana_ids": [
+      "1202908906082645"
+    ],
+    "slack_ids": [
+      "U040QM4RHCL"
+    ]
+  },
+  "pablo@diagonalminds.com": {
+    "asana_ids": [
+      "1203102843263492"
+    ],
+    "slack_ids": []
+  },
+  "bruna.pereira@disney.com": {
+    "asana_ids": [
+      "1203244005799361"
+    ],
+    "slack_ids": []
+  },
+  "tatiana.c@nomadic.agency": {
+    "asana_ids": [
+      "1203244758846303"
+    ],
+    "slack_ids": [
+      "U04893L6USC"
+    ]
+  },
+  "claudio.m@nomadic.agency": {
+    "asana_ids": [
+      "1203387427064592"
+    ],
+    "slack_ids": [
+      "U049ZHWC3C6"
+    ]
+  },
+  "nicolas.b@nomadic.agency": {
+    "asana_ids": [
+      "1203476706807398"
+    ],
+    "slack_ids": [
+      "U04DNUED5DF"
+    ]
+  },
+  "yanella.p@nomadic.agency": {
+    "asana_ids": [
+      "1203626253219800"
+    ],
+    "slack_ids": [
+      "U04HN18CK9P"
+    ]
+  },
+  "daniel.mirond@gmail.com": {
+    "asana_ids": [
+      "98912955648527"
+    ],
+    "slack_ids": []
+  },
+  "ana@nomadic.agency": {
+    "asana_ids": [
+      "1204415303437719"
+    ],
+    "slack_ids": [
+      "U02T6NCCWTW"
+    ]
+  },
+  "pedro.scormin@disney.com": {
+    "asana_ids": [
+      "1204481969316275"
+    ],
+    "slack_ids": []
+  },
+  "luciana.seclen@disney.com": {
+    "asana_ids": [
+      "1204481969316277"
+    ],
+    "slack_ids": []
+  },
+  "pedroscormin@gmail.com": {
+    "asana_ids": [
+      "1204637197948645"
+    ],
+    "slack_ids": []
+  },
+  "federico.schirmer@disney.com": {
+    "asana_ids": [
+      "1204756870256252"
+    ],
+    "slack_ids": []
+  },
+  "milagros.sabater@disney.com": {
+    "asana_ids": [
+      "1202858032966068"
+    ],
+    "slack_ids": []
+  },
+  "hernan.h@nomadic.agency": {
+    "asana_ids": [
+      "1204817729532326"
+    ],
+    "slack_ids": [
+      "U05AA7MGB9C"
+    ]
+  },
+  "naiara.p@nomadic.agency": {
+    "asana_ids": [
+      "1205137009666407"
+    ],
+    "slack_ids": [
+      "U04LR688B0T"
+    ]
+  },
+  "juliane@nomadic.agency": {
+    "asana_ids": [
+      "1205376249451754"
+    ],
+    "slack_ids": [
+      "U036NJ4B22W"
+    ]
+  },
+  "group.leaders@nomadic.agency": {
+    "asana_ids": [
+      "1205389747864852"
+    ],
+    "slack_ids": []
+  },
+  "florencia.d@nomadic.agency": {
+    "asana_ids": [
+      "1205366782205282"
+    ],
+    "slack_ids": [
+      "U05PNQER6FN"
+    ]
+  },
+  "alejo.v@nomadic.agency": {
+    "asana_ids": [
+      "1205418887208768"
+    ],
+    "slack_ids": [
+      "U02TE8T3B5J"
+    ]
+  },
+  "eugenia.a@nomadic.agency": {
+    "asana_ids": [
+      "1205761087080685"
+    ],
+    "slack_ids": [
+      "U045SR85DND"
+    ]
+  },
+  "carla.a@nomadic.agency": {
+    "asana_ids": [
+      "1205823606951274"
+    ],
+    "slack_ids": [
+      "U062KALEWF2"
+    ]
+  },
+  "carlos.d@nomadic.agency": {
+    "asana_ids": [
+      "1206006378657474"
+    ],
+    "slack_ids": [
+      "U02UJGVT59Q"
+    ]
+  },
+  "nada@nomadic.agency": {
+    "asana_ids": [
+      "1207102463586424"
+    ],
+    "slack_ids": []
+  },
+  "gustavo@nomadic.agency": {
+    "asana_ids": [
+      "1207170882151223"
+    ],
+    "slack_ids": [
+      "U039MTTCRUL"
+    ]
+  },
+  "pda@gezie.io": {
+    "asana_ids": [
+      "1207385897729597"
+    ],
+    "slack_ids": []
+  },
+  "bernardo.s@nomadic.agency": {
+    "asana_ids": [
+      "1207925806468660"
+    ],
+    "slack_ids": [
+      "U05LGEH02N4"
+    ]
+  },
+  "diego.h@nomadic.agency": {
+    "asana_ids": [
+      "1207925806468672"
+    ],
+    "slack_ids": [
+      "U05L5CGM3AM"
+    ]
+  },
+  "ignacio.p@nomadic.agency": {
+    "asana_ids": [
+      "1207925806468678"
+    ],
+    "slack_ids": [
+      "U02SA359YKG"
+    ]
+  },
+  "tomas.s@nomadic.agency": {
+    "asana_ids": [
+      "1208054454091584"
+    ],
+    "slack_ids": [
+      "U07QB51UHPS"
+    ]
+  },
+  "sebastian.p@nomadic.agency": {
+    "asana_ids": [
+      "1208056260253540"
+    ],
+    "slack_ids": [
+      "U05KL40M8H4"
+    ]
+  },
+  "juan.g@nomadic.agency": {
+    "asana_ids": [
+      "1210174488536972"
+    ],
+    "slack_ids": [
+      "U08LB4TEHV1"
+    ]
+  },
+  "dante@nomadic.agency": {
+    "asana_ids": [
+      "1210679934930419"
+    ],
+    "slack_ids": [
+      "UMEDRF79U"
+    ]
+  },
+  "wilson.m@nomadic.agency": {
+    "asana_ids": [
+      "1210789577825770"
+    ],
+    "slack_ids": [
+      "U09575K8G8Z"
+    ]
+  },
+  "hose.a@nomadic.agency": {
+    "asana_ids": [
+      "1210862103431372"
+    ],
+    "slack_ids": []
+  },
+  "sanllorenti.mariajose@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0183KR4873"
+    ]
+  },
+  "faysal.n@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01BB7G4VC0"
+    ]
+  },
+  "agustina@piio.co": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01F97D1FG8"
+    ]
+  },
+  "melisa.l@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01FF3G2Y83"
+    ]
+  },
+  "santiago.s@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01FTELP1KK"
+    ]
+  },
+  "toni@soyhenry.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01FZJD09TM"
+    ]
+  },
+  "marina.ma@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01G4LUTBKJ"
+    ]
+  },
+  "augusto.t@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01G4N53MGQ"
+    ]
+  },
+  "ayelen@cace.org.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01GTU7TME3"
+    ]
+  },
+  "dario@seologia.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01GXFV00QL"
+    ]
+  },
+  "virginia@cace.org.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01H8TM5SQK"
+    ]
+  },
+  "sol@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01JBLA3Q6S"
+    ]
+  },
+  "ezequiel@redfrog.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01JT9UFWL9"
+    ]
+  },
+  "matias@redfrog.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01K4G1UQ4Q"
+    ]
+  },
+  "juan.ma@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01ML9NPAF7"
+    ]
+  },
+  "romina.revello@yagmour.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01N40RGS12"
+    ]
+  },
+  "agustina.velardez@yagmour.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01N40RLF5J"
+    ]
+  },
+  "yamila@cliengo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01N6QM2486"
+    ]
+  },
+  "agustina.gallo@leadaki.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01NDQ1429Z"
+    ]
+  },
+  "yamila@leadaki.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01NEFYUKT5"
+    ]
+  },
+  "florencia.tadiotto@leadaki.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01NUDQHVU6"
+    ]
+  },
+  "rgphernandez@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01NYN4FUQJ"
+    ]
+  },
+  "andres@leadaki.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01P51A5P9U"
+    ]
+  },
+  "federico@lemoncash.io": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01Q33YK9RV"
+    ]
+  },
+  "franco@lemoncash.io": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01QB3V1AGN"
+    ]
+  },
+  "v.garciabidoglio@satrendy.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01QEPUP6AH"
+    ]
+  },
+  "agaona@satrendy.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01QJ2YUM0T"
+    ]
+  },
+  "adperez@satrendy.net": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01RC4N0GHW"
+    ]
+  },
+  "administracion@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U01TKT00UUC"
+    ]
+  },
+  "pmfernandez@chequeado.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U021VK2LMP1"
+    ]
+  },
+  "silvina.o@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0232NZ5GF7"
+    ]
+  },
+  "alejo@lemoncash.io": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U024NN2A127"
+    ]
+  },
+  "acceso@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0252GBA2RE"
+    ]
+  },
+  "florencia_maccione@artear.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U029NG22BFF"
+    ]
+  },
+  "aricarte@artear.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U029XNRT6TE"
+    ]
+  },
+  "jdiezhen@caracoltv.com.co": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02B2F2UYKH"
+    ]
+  },
+  "curcola@rougeinternacional.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02BN4MGWB1"
+    ]
+  },
+  "gaviles@rougeinternacional.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02BQRQ0W4A"
+    ]
+  },
+  "ccastellano@rougeinternacional.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02C3EEK89F"
+    ]
+  },
+  "abccolor@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02FN1BBNLF"
+    ]
+  },
+  "diego.viviano@yagmour.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02FUJV9L9E"
+    ]
+  },
+  "nick.e.martinez0@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02G6D5UR8W"
+    ]
+  },
+  "matias.carrera@lemon.me": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02GY56TLMA"
+    ]
+  },
+  "maca@storybaker.co": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02KEJTRN2F"
+    ]
+  },
+  "pablo@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02LX352TCL"
+    ]
+  },
+  "bgordon@rougeinternacional.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02NFJC25JT"
+    ]
+  },
+  "armando.nava@mediamonks.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02NFJT7H8C"
+    ]
+  },
+  "gino.v@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02PPUW7TT9"
+    ]
+  },
+  "diazp.br@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02PQ991URZ"
+    ]
+  },
+  "catalinarupe4@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02PQJJP9L5"
+    ]
+  },
+  "rlopezj@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02Q9MRNS1M"
+    ]
+  },
+  "hcoca@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02Q9MRR5HD"
+    ]
+  },
+  "sfmarin@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02Q9MRSWBZ"
+    ]
+  },
+  "mfcaballero@satrendy.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02QQARQR8B"
+    ]
+  },
+  "jmsasot@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02QS80QHKN"
+    ]
+  },
+  "mcarrion@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02R2FJVC8Z"
+    ]
+  },
+  "merlo.alfredo@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RATKTM37"
+    ]
+  },
+  "jeronimo.f@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RD7A19MY"
+    ]
+  },
+  "jhoselyn.i@embluemail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RERHMS2V"
+    ]
+  },
+  "fabian_induti@hotmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RGHKH3T7"
+    ]
+  },
+  "xdiezn@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RL6E56TC"
+    ]
+  },
+  "tblanco@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RL6EA7FU"
+    ]
+  },
+  "vfernandezbellido@al.uloyola.es": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02RNC6CKQU"
+    ]
+  },
+  "edergarciarodriguez@al.uloyola.es": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U02S5DR4VMY"
+    ]
+  },
+  "gaston@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U039MTTKX1S"
+    ]
+  },
+  "mazariegos1989@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U03ADDD513M"
+    ]
+  },
+  "dante1990m@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U03KFHRA2LU"
+    ]
+  },
+  "julian.m@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U047220908P"
+    ]
+  },
+  "daniela.g@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05KC758YCF"
+    ]
+  },
+  "victor.h@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05KL406R7Y"
+    ]
+  },
+  "francisco.f@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05KPR8CRK7"
+    ]
+  },
+  "martin.m@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05KPR91WKX"
+    ]
+  },
+  "carlos.m@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05KSL3RK99"
+    ]
+  },
+  "daniel@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05KSPA1W7L"
+    ]
+  },
+  "jmartinr@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05NT0EK7FH"
+    ]
+  },
+  "ssanz@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05P0STNUNA"
+    ]
+  },
+  "omunozm@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05P0STTNDC"
+    ]
+  },
+  "xsole@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05P4JVBNJ1"
+    ]
+  },
+  "mseegers@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05P7DG8GCT"
+    ]
+  },
+  "agomezo@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05P7GAGR50"
+    ]
+  },
+  "sperezm@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05PA00AD9S"
+    ]
+  },
+  "acabarubias@grupogodo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05PL5K24P3"
+    ]
+  },
+  "vvillar@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05PX7KCVCY"
+    ]
+  },
+  "aroig@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05PX7KF4G0"
+    ]
+  },
+  "ahernando@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05QHQPNP34"
+    ]
+  },
+  "aperezs@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U05SFS56U5A"
+    ]
+  },
+  "alejo.l@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U06C1D9GXJ9"
+    ]
+  },
+  "reyesandreav@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U06G2J8P8LQ"
+    ]
+  },
+  "orlando.real@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U075N9AT9BR"
+    ]
+  },
+  "efloresh84@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U075XV1CRRT"
+    ]
+  },
+  "hazel@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0762GEJEBD"
+    ]
+  },
+  "angeles@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0762KQKJ7L"
+    ]
+  },
+  "daniel.jimenez@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0762RQHTTL"
+    ]
+  },
+  "guillene@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07654BD468"
+    ]
+  },
+  "fernando.velasco@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0777A33GQL"
+    ]
+  },
+  "alexis@sdpnoticias.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0777A36Z1A"
+    ]
+  },
+  "catalina.c@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07APRUNP2S"
+    ]
+  },
+  "ana.l@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07C6KZ3Z1R"
+    ]
+  },
+  "sofia.n@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07C6KZ6RRR"
+    ]
+  },
+  "jose.a@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07CVH376G0"
+    ]
+  },
+  "manuel.m@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07CXSFDJCC"
+    ]
+  },
+  "agisbert@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07SS283FLM"
+    ]
+  },
+  "vmarquez@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07SS2PFSUV"
+    ]
+  },
+  "msantiago@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07SXDA3HC4"
+    ]
+  },
+  "ddenza@growon.com.ar": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07TNSEB00N"
+    ]
+  },
+  "betania.v@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U07UL38N7A8"
+    ]
+  },
+  "prodriguezg@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U080PBE5K38"
+    ]
+  },
+  "vanemacias2391@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U081Z3Z4XU7"
+    ]
+  },
+  "sartunedo@mundodeportivo.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U0870D3704F"
+    ]
+  },
+  "miguel.e@nomadic.agency": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U089Q6J6CG5"
+    ]
+  },
+  "milagrosmoreni@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U08B3N2N4A1"
+    ]
+  },
+  "marcetarrio@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U08BGJ06BGB"
+    ]
+  },
+  "mermosca@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U08UV4ZQ70W"
+    ]
+  },
+  "lucilapostulantesrrhh@gmail.com": {
+    "asana_ids": [],
+    "slack_ids": [
+      "U08V26Z8338"
+    ]
+  }
+}

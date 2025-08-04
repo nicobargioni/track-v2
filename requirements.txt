@@ -1,0 +1,7 @@
+asana==5.0.15
+Flask==3.0.0
+openai==1.97.0
+requests
+google-cloud-logging==3.12.1
+firebase-admin==6.8.0
+python-dotenv
