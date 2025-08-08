@@ -10,7 +10,7 @@ import traceback
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from llm_evaluator import evaluate_commitment
-from slack_helpers import post_thread_message, get_user_info, add_reaction, remove_reaction, post_ephemeral_message
+from slack_helpers import post_thread_message, get_user_info, add_reaction, remove_reaction, post_ephemeral_message, get_channel_info
 from asana_client import create_asana_task, delete_asana_task
 from channel_map import get_asana_project_id
 # import google.cloud.logging
@@ -124,6 +124,14 @@ def process_asana_task_creation(event, commitment_data):
         logging.info(f"👤 User who posted: {user_who_posted}")
         logging.info(f"📊 Commitment data: {commitment_data}")
         
+        # Obtener información del usuario que creó la tarea
+        creator_info = get_user_info(user_who_posted)
+        creator_name = creator_info.get('real_name') or creator_info.get('display_name') or creator_info.get('name') or f"<@{user_who_posted}>"
+        
+        # Obtener información del canal
+        channel_info = get_channel_info(channel)
+        channel_name = channel_info.get('name', channel)
+        
         # Obtener proyecto de Asana del canal
         asana_project_id = get_asana_project_id(channel)
         logging.info(f"🎯 Asana project ID for channel: {asana_project_id}")
@@ -161,6 +169,12 @@ def process_asana_task_creation(event, commitment_data):
             if not sin_asignacion:
                 # Si no hay mención y no está marcado como sin asignación, salir
                 return
+            
+            # Si no hay mención, asignar la tarea al usuario que la creó
+            logging.info("Asignando tarea al usuario que la creó")
+            creator_email = creator_info.get('profile', {}).get('email')
+            asana_gid = get_asana_gid_from_slack_user(user_who_posted)
+            user_email = creator_email
         
         # Crear tarea (con o sin asignación)
         task_result = create_asana_task(
@@ -169,7 +183,7 @@ def process_asana_task_creation(event, commitment_data):
             assignee_gid=asana_gid,
             project_id=asana_project_id,
             due_on=commitment_data.get('fecha_limite'),
-            description=f"Tarea creada desde Slack\n\nMensaje original: {text}\n\nCanal: #{channel}"
+            description=f"Tarea creada desde Slack por: {creator_name}\n\nMensaje original: {text}\n\nCanal: #{channel_name}\n\nLink al mensaje: https://nomadicseo.slack.com/archives/{channel}/p{message_ts.replace('.','')}"
         )
         
         # Guardar mapeo de tarea con timestamp de creación
@@ -184,7 +198,8 @@ def process_asana_task_creation(event, commitment_data):
             'project_id': asana_project_id,
             'created_at': creation_time,
             'can_be_cancelled': True,
-            'task_name': commitment_data['descripcion']  # Guardar nombre de la tarea
+            'task_name': commitment_data['descripcion'],  # Guardar nombre de la tarea
+            'thread_ts': event.get('thread_ts')  # Guardar thread_ts para mensajes ephemeral
         }
         save_task_mapping()
         
@@ -218,24 +233,19 @@ def process_asana_task_creation(event, commitment_data):
         except:
             pass
         
-        # Construir mensaje efímero según si hay asignación o no
-        if sin_asignacion or not mentioned_user_id:
-            message = f"✅ Tarea generada: '{commitment_data['descripcion']}'"
-            if project_name:
-                message += f" en {project_name}"
-            message += f"\n\n⚠️ **No se detectó a quién asignar la tarea.** Por favor, asignala manualmente en Asana."
-            message += f"\n\n🚫 Tenés 5 minutos para cancelarla reaccionando con :señal_: en este mensaje."
-        else:
-            message = f"✅ Tarea generada: '{commitment_data['descripcion']}' a <@{mentioned_user_id}>"
-            if project_name:
-                message += f" en {project_name}"
-            message += f"\n\n🚫 Tenés 5 minutos para cancelarla reaccionando con :señal_: en este mensaje."
+        # Mensaje ephemeral simplificado: solo emoji + link
+        task_url = task_result.get('url', f"https://app.asana.com/0/{asana_project_id}/{task_result['gid']}")
+        message = f"✅ <{task_url}|Ver tarea en Asana>"
         
-        post_ephemeral_message(
+        logging.info(f"📨 Sending ephemeral message to user {user_who_posted} in channel {channel}")
+        logging.info(f"📝 Message content: {message}")
+        ephemeral_result = post_ephemeral_message(
             channel=channel,
             user=user_who_posted,
-            text=message
+            text=message,
+            thread_ts=event.get('thread_ts')
         )
+        logging.info(f"📨 Ephemeral message result: {ephemeral_result}")
         
     except Exception as e:
         logging.error(f"Error creando tarea automática: {str(e)}")
@@ -281,7 +291,8 @@ def handle_task_deletion(task_info, channel, message_ts):
         post_ephemeral_message(
             channel=channel,
             user=task_info['user_who_posted'],
-            text=f"🗑️ Tarea eliminada de Asana exitosamente"
+            text="🗑️",
+            thread_ts=task_info.get('thread_ts')
         )
         
         logging.info(f"✅ Task deletion completed successfully in {time_elapsed:.1f} seconds")
@@ -365,11 +376,14 @@ def slack_events():
             
             text = event['text']
             logging.info(f"💬 Processing message: {text}")
+            logging.info(f"📍 Channel: {event.get('channel')}")
+            logging.info(f"👤 User: {event.get('user')}")
             
             # Siempre evaluar el mensaje, tenga o no menciones
             logging.info("🔍 Evaluating message for commitment...")
             commitment_data = evaluate_commitment(text)
             logging.info(f"🤖 LLM evaluation result: {commitment_data}")
+            logging.info(f"🤖 Type of result: {type(commitment_data)}")
             
             if commitment_data and commitment_data.get('es_compromiso'):
                 logging.info("✅ Message identified as commitment")
@@ -421,7 +435,8 @@ def slack_events():
                             post_ephemeral_message(
                                 channel=item['channel'],
                                 user=event['user'],
-                                text="⏰ Ya no puedes cancelar esta tarea. Han pasado más de 5 minutos desde su creación."
+                                text="⏰ Ya no puedes cancelar esta tarea. Han pasado más de 5 minutos desde su creación.",
+                                thread_ts=task_info.get('thread_ts')
                             )
                             # Remover la reacción ya que no es válida
                             remove_reaction(item['channel'], item['ts'], 'no_entry_sign')
@@ -432,7 +447,8 @@ def slack_events():
                             post_ephemeral_message(
                                 channel=item['channel'],
                                 user=event['user'],
-                                text="❌ Solo el creador de la tarea puede cancelarla."
+                                text="❌ Solo el creador de la tarea puede cancelarla.",
+                                thread_ts=task_info.get('thread_ts')
                             )
                             # Remover la reacción ya que no es válida
                             remove_reaction(item['channel'], item['ts'], 'no_entry_sign')
@@ -505,7 +521,8 @@ def asana_webhook():
                                     post_ephemeral_message(
                                         channel=task_info['channel'],
                                         user=task_info['user_who_posted'],
-                                        text=f"✅ La tarea '{task_info.get('task_name', 'Sin nombre')}' fue completada por <@{slack_user_completed}> en Asana"
+                                        text=f"✅ La tarea '{task_info.get('task_name', 'Sin nombre')}' fue completada por <@{slack_user_completed}> en Asana",
+                                        thread_ts=task_info.get('thread_ts')
                                     )
                             break
                     

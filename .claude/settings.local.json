@@ -8,7 +8,10 @@
       "Bash(del test_server.py)",
       "Bash(del simple_server.py)",
       "Bash(del run_app.py)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(taskkill:*)",
+      "Bash(powershell:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }

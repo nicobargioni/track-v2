@@ -1,116 +1,218 @@
 {
-  "C095Z81G3K8:1753820362.286439": {
-    "asana_gid": "1210920955857386",
+  "C095Z81G3K8:1754673939.920169": {
+    "asana_gid": "1211010502018399",
     "channel": "C095Z81G3K8",
-    "message_ts": "1753820362.286439",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": "U09575K8G8Z",
-    "project_id": "1210802309962115"
-  },
-  "C095Z81G3K8:1753823368.953689": {
-    "asana_gid": "1210921273765791",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753823368.953689",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": "UMC8ABJQG",
-    "project_id": "1210802309962115",
-    "created_at": 1753823374.3543823,
-    "can_be_cancelled": true
-  },
-  "C095Z81G3K8:1753987201.346229": {
-    "asana_gid": "1210941840082142",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753987201.346229",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": "U026XJC298V",
-    "project_id": "1210802309962115",
-    "created_at": 1753987568.9414341,
-    "can_be_cancelled": true
-  },
-  "C095Z81G3K8:1753987651.158099": {
-    "asana_gid": "1210941976131447",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753987651.158099",
+    "message_ts": "1754673939.920169",
     "user_who_posted": "U04DNUED5DF",
     "assigned_to": "U09575K8G8Z",
     "project_id": "1210802309962115",
-    "created_at": 1753987656.6243224,
-    "can_be_cancelled": true
+    "created_at": 1754674311.5316434,
+    "can_be_cancelled": true,
+    "task_name": "mandar un mail resumiendo esto",
+    "thread_ts": null
   },
-  "C095Z81G3K8:1753987941.572359": {
-    "asana_gid": "1210942122765775",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753987941.572359",
+  "C095LL12G75:1754676062.218129": {
+    "asana_gid": "1211010850774471",
+    "channel": "C095LL12G75",
+    "message_ts": "1754676062.218129",
     "user_who_posted": "U04DNUED5DF",
     "assigned_to": "U09575K8G8Z",
     "project_id": "1210802309962115",
-    "created_at": 1753987947.6854935,
-    "can_be_cancelled": true
-  },
-  "C095Z81G3K8:1753988386.720199": {
-    "asana_gid": "1210942145645052",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753988386.720199",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": "U026XJC298V",
-    "project_id": "1210802309962115",
-    "created_at": 1753988393.2003815,
+    "created_at": 1754676070.2121103,
     "can_be_cancelled": false,
-    "task_name": "armar proyecto con webhook asana para verif"
+    "task_name": "arreglar tema en el tracker",
+    "thread_ts": null
   },
-  "C095Z81G3K8:1753988475.833149": {
-    "asana_gid": "1210942149843560",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753988475.833149",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": "U026XJC298V",
-    "project_id": "1210802309962115",
-    "created_at": 1753988481.5098062,
-    "can_be_cancelled": false,
-    "task_name": "hacer proyecto con webhook"
-  },
-  "C095Z81G3K8:1753988637.248089": {
-    "asana_gid": "1210942026768002",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753988637.248089",
+  "C095LL12G75:1754676309.335989": {
+    "asana_gid": "1211010589754790",
+    "channel": "C095LL12G75",
+    "message_ts": "1754676309.335989",
     "user_who_posted": "U04DNUED5DF",
     "assigned_to": null,
     "project_id": "1210802309962115",
-    "created_at": 1753988642.2716055,
+    "created_at": 1754676317.3037877,
     "can_be_cancelled": false,
-    "task_name": "mandar webhook para reaccionar como :heavy_check_mark:"
+    "task_name": "mandar un mail respondiendo",
+    "thread_ts": "1754676062.218129"
   },
-  "C095Z81G3K8:1753993111.681949": {
-    "asana_gid": "1210942754732427",
+  "C095LL12G75:1754677437.984059": {
+    "asana_gid": "1211010567042870",
+    "channel": "C095LL12G75",
+    "message_ts": "1754677437.984059",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": "U09575K8G8Z",
+    "project_id": "1210802309962115",
+    "created_at": 1754677447.5897937,
+    "can_be_cancelled": false,
+    "task_name": "mandar el resumen",
+    "thread_ts": "1754676062.218129"
+  },
+  "C095LL12G75:1754677447.321829": {
+    "asana_gid": "1211010570872371",
+    "channel": "C095LL12G75",
+    "message_ts": "1754677447.321829",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": "U09575K8G8Z",
+    "project_id": "1210802309962115",
+    "created_at": 1754677456.769165,
+    "can_be_cancelled": false,
+    "task_name": "mandar resumen",
+    "thread_ts": "1754676062.218129"
+  },
+  "C095LL12G75:1754677459.614999": {
+    "asana_gid": "1211010903037912",
+    "channel": "C095LL12G75",
+    "message_ts": "1754677459.614999",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": "U09575K8G8Z",
+    "project_id": "1210802309962115",
+    "created_at": 1754677467.95985,
+    "can_be_cancelled": false,
+    "task_name": "mandar tres res\u00famenes",
+    "thread_ts": "1754676062.218129"
+  },
+  "C095Z81G3K8:1754679562.565089": {
+    "asana_gid": "1211011049774521",
     "channel": "C095Z81G3K8",
-    "message_ts": "1753993111.681949",
+    "message_ts": "1754679562.565089",
+    "user_who_posted": "U026XJC298V",
+    "assigned_to": "U04DNUED5DF",
+    "project_id": "1210802309962115",
+    "created_at": 1754679572.0185466,
+    "can_be_cancelled": true,
+    "task_name": "organizarse y priorizar tareas relacionadas con el tracker",
+    "thread_ts": "1754674600.659929"
+  },
+  "C095Z81G3K8:1754679594.990699": {
+    "asana_gid": "1211011261057176",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754679594.990699",
+    "user_who_posted": "U026XJC298V",
+    "assigned_to": "U097HKXMD39",
+    "project_id": "1210802309962115",
+    "created_at": 1754679604.0133612,
+    "can_be_cancelled": false,
+    "task_name": "realizar tarea de ortograf\u00eda",
+    "thread_ts": "1754674600.659929"
+  },
+  "C095Z81G3K8:1754680087.955219": {
+    "asana_gid": "1211011070168271",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754680087.955219",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754680097.8090532,
+    "can_be_cancelled": false,
+    "task_name": "hacer commit en el github de nomadic por cambios de ayer, arreglar url con cloudflared, activar url fuera de la computadora",
+    "thread_ts": "1754674600.659929"
+  },
+  "C095Z81G3K8:1754680216.350669": {
+    "asana_gid": "1211011072803740",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754680216.350669",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754680225.7650921,
+    "can_be_cancelled": true,
+    "task_name": "obtener URL de Cloud Run",
+    "thread_ts": "1754675701.400399"
+  },
+  "C095LL12G75:1754680475.273609": {
+    "asana_gid": "1211010959780268",
+    "channel": "C095LL12G75",
+    "message_ts": "1754680475.273609",
+    "user_who_posted": "U026XJC298V",
+    "assigned_to": "U04DNUED5DF",
+    "project_id": "1210802309962115",
+    "created_at": 1754680483.9259815,
+    "can_be_cancelled": true,
+    "task_name": "seguir por este canal",
+    "thread_ts": "1754679678.214259"
+  },
+  "C095LL12G75:1754680563.474819": {
+    "asana_gid": "1211010962771880",
+    "channel": "C095LL12G75",
+    "message_ts": "1754680563.474819",
     "user_who_posted": "U026XJC298V",
     "assigned_to": null,
     "project_id": "1210802309962115",
-    "created_at": 1753993115.816293,
-    "can_be_cancelled": false,
-    "task_name": "agregar nombre del redactor a planilla de control"
-  },
-  "C095Z81G3K8:1753995596.988119": {
-    "asana_gid": "1210942876829992",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753995596.988119",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": null,
-    "project_id": "1210802309962115",
-    "created_at": 1753995603.219289,
-    "can_be_cancelled": false,
-    "task_name": "enviar documento sobre esto"
-  },
-  "C095Z81G3K8:1753996369.574749": {
-    "asana_gid": "1210943153463841",
-    "channel": "C095Z81G3K8",
-    "message_ts": "1753996369.574749",
-    "user_who_posted": "U04DNUED5DF",
-    "assigned_to": null,
-    "project_id": "1210802309962115",
-    "created_at": 1753996373.5133002,
+    "created_at": 1754680572.3298035,
     "can_be_cancelled": true,
-    "task_name": "mandar tres documentos sobre esto"
+    "task_name": "subir nuevo a GitHub o pasar algo funcional",
+    "thread_ts": "1754679678.214259"
+  },
+  "C095LL12G75:1754680583.277189": {
+    "asana_gid": "1211011298170598",
+    "channel": "C095LL12G75",
+    "message_ts": "1754680583.277189",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754680592.028616,
+    "can_be_cancelled": true,
+    "task_name": "subir algo",
+    "thread_ts": "1754679678.214259"
+  },
+  "C095LL12G75:1754680595.344329": {
+    "asana_gid": "1211011087338378",
+    "channel": "C095LL12G75",
+    "message_ts": "1754680595.344329",
+    "user_who_posted": "U026XJC298V",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754680607.4672813,
+    "can_be_cancelled": true,
+    "task_name": "hacer commit en GitHub",
+    "thread_ts": "1754679678.214259"
+  },
+  "C095Z81G3K8:1754681032.904969": {
+    "asana_gid": "1211011102394305",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754681032.904969",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754681044.010186,
+    "can_be_cancelled": false,
+    "task_name": "corregir documento y enviarlo",
+    "thread_ts": null
+  },
+  "C095Z81G3K8:1754681088.610059": {
+    "asana_gid": "1211011385648224",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754681088.610059",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754681097.5831935,
+    "can_be_cancelled": true,
+    "task_name": "mandar 3 archivos m\u00e1s",
+    "thread_ts": "1754681032.904969"
+  },
+  "C095Z81G3K8:1754681105.745259": {
+    "asana_gid": "1211011105126421",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754681105.745259",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754681115.4894543,
+    "can_be_cancelled": true,
+    "task_name": "tener archivo listo para reuni\u00f3n de discovery",
+    "thread_ts": "1754681032.904969"
+  },
+  "C095Z81G3K8:1754681126.084629": {
+    "asana_gid": "1211011106169900",
+    "channel": "C095Z81G3K8",
+    "message_ts": "1754681126.084629",
+    "user_who_posted": "U04DNUED5DF",
+    "assigned_to": null,
+    "project_id": "1210802309962115",
+    "created_at": 1754681135.2107248,
+    "can_be_cancelled": true,
+    "task_name": "realizar seguimiento",
+    "thread_ts": "1754681032.904969"
   }
 }

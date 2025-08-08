@@ -57,8 +57,13 @@ def remove_reaction(channel, timestamp, reaction):
     
     return response.json()
 
-def post_ephemeral_message(channel, user, text):
+def post_ephemeral_message(channel, user, text, thread_ts=None):
     """Envía un mensaje efímero que solo el usuario especificado puede ver"""
+    logging.info(f"📮 Attempting to send ephemeral message")
+    logging.info(f"   Channel: {channel}, User: {user}")
+    logging.info(f"   Text: {text[:100]}...")
+    logging.info(f"   Thread TS: {thread_ts}")
+    
     headers = {
         'Authorization': f'Bearer {SLACK_BOT_TOKEN}',
         'Content-Type': 'application/json'
@@ -70,16 +75,26 @@ def post_ephemeral_message(channel, user, text):
         'text': text
     }
     
+    # Agregar thread_ts si está presente
+    if thread_ts:
+        data['thread_ts'] = thread_ts
+    
     response = requests.post(
         'https://slack.com/api/chat.postEphemeral',
         headers=headers,
         json=data
     )
     
-    if response.status_code != 200 or not response.json().get('ok'):
-        logging.error(f"Error posting ephemeral message: {response.json()}")
+    result = response.json()
+    if response.status_code != 200 or not result.get('ok'):
+        logging.error(f"❌ Error posting ephemeral message: {result}")
+        if result.get('error'):
+            logging.error(f"   Error code: {result.get('error')}")
+            logging.error(f"   Error msg: {result.get('error_msg', 'No error message')}")
+    else:
+        logging.info(f"✅ Ephemeral message sent successfully")
     
-    return response.json()
+    return result
 
 def post_message_with_button(channel, thread_ts, original_message, commitment_data, message_ts):
     headers = {
@@ -173,6 +188,28 @@ def get_user_info(user_id):
     else:
         logging.error(f"Error getting user info: {response.json()}")
         send_slack(f"Error getting user info: {response.json()}")
+        return {}
+
+def get_channel_info(channel_id):
+    headers = {
+        'Authorization': f'Bearer {SLACK_BOT_TOKEN}',
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+    
+    params = {
+        'channel': channel_id
+    }
+    
+    response = requests.get(
+        'https://slack.com/api/conversations.info',
+        headers=headers,
+        params=params
+    )
+    
+    if response.status_code == 200 and response.json().get('ok'):
+        return response.json().get('channel', {})
+    else:
+        logging.error(f"Error getting channel info: {response.json()}")
         return {}
 
 def open_task_dialog(trigger_id, commitment_data, original_message, channel, thread_ts):

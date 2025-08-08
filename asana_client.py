@@ -1,6 +1,6 @@
 import os, logging
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 from utils import send_slack
 from dotenv import load_dotenv
 
@@ -11,6 +11,10 @@ ASANA_PAT = os.getenv('ASANA_PERSONAL_ACCESS_TOKEN')
 def create_asana_task(name, assignee_email, project_id, due_on=None, description=None, subtasks=None, assignee_gid=None):
     logging.info("Args received:")
     logging.info(f"name={name}, assignee_email={assignee_email}, project_id={project_id}, due_on={due_on}, description={description}, subtasks={subtasks}")
+    
+    # Log de procesamiento de fecha
+    if due_on:
+        logging.info(f"📅 Processing due date: '{due_on}'")
     headers = {
         'Authorization': f'Bearer {ASANA_PAT}',
         'Content-Type': 'application/json'
@@ -43,9 +47,12 @@ def create_asana_task(name, assignee_email, project_id, due_on=None, description
         try:
             parsed_date = parse_date(due_on)
             if parsed_date:
+                logging.info(f"✅ Parsed date successfully: '{due_on}' -> '{parsed_date}'")
                 task_data['data']['due_on'] = parsed_date
-        except:
-            pass
+            else:
+                logging.warning(f"⚠️ Could not parse date: '{due_on}'")
+        except Exception as e:
+            logging.error(f"❌ Error parsing date '{due_on}': {str(e)}")
     
     response = requests.post(
         'https://app.asana.com/api/1.0/tasks',
@@ -155,17 +162,100 @@ def get_workspace_gid():
     raise Exception("No workspace found")
 
 def parse_date(date_str):
+    """
+    Parsea una fecha que puede ser:
+    - Una fecha en formato ISO o común
+    - Una fecha relativa como "hoy", "mañana", etc.
+    """
+    if not date_str:
+        return None
+    
+    # Convertir a minúsculas para comparación
+    date_lower = date_str.lower().strip()
+    
+    # Obtener fecha actual
+    today = datetime.now()
+    
+    # Diccionario de fechas relativas en español
+    relative_dates = {
+        'hoy': today,
+        'today': today,
+        'mañana': today + timedelta(days=1),
+        'manana': today + timedelta(days=1),
+        'tomorrow': today + timedelta(days=1),
+        'pasado mañana': today + timedelta(days=2),
+        'pasado manana': today + timedelta(days=2),
+        'ayer': today - timedelta(days=1),
+        'yesterday': today - timedelta(days=1),
+        'esta semana': today + timedelta(days=(4 - today.weekday()) % 7),  # Viernes de esta semana
+        'próxima semana': today + timedelta(days=7),
+        'proxima semana': today + timedelta(days=7),
+        'next week': today + timedelta(days=7),
+        'fin de semana': today + timedelta(days=(5 - today.weekday()) % 7),  # Sábado más cercano
+        'lunes': today + timedelta(days=(0 - today.weekday()) % 7),
+        'martes': today + timedelta(days=(1 - today.weekday()) % 7),
+        'miércoles': today + timedelta(days=(2 - today.weekday()) % 7),
+        'miercoles': today + timedelta(days=(2 - today.weekday()) % 7),
+        'jueves': today + timedelta(days=(3 - today.weekday()) % 7),
+        'viernes': today + timedelta(days=(4 - today.weekday()) % 7),
+        'sábado': today + timedelta(days=(5 - today.weekday()) % 7),
+        'sabado': today + timedelta(days=(5 - today.weekday()) % 7),
+        'domingo': today + timedelta(days=(6 - today.weekday()) % 7),
+    }
+    
+    # Verificar si es una fecha relativa
+    for key, value in relative_dates.items():
+        if key in date_lower:
+            # Si el día ya pasó esta semana, asumimos la próxima semana
+            result_date = value
+            if key in ['lunes', 'martes', 'miércoles', 'miercoles', 'jueves', 'viernes', 'sábado', 'sabado', 'domingo']:
+                if result_date.date() <= today.date():
+                    result_date = result_date + timedelta(days=7)
+            return result_date.strftime('%Y-%m-%d')
+    
+    # Verificar patrones como "en X días"
+    import re
+    days_pattern = re.match(r'en (\d+) días?', date_lower)
+    if days_pattern:
+        days = int(days_pattern.group(1))
+        return (today + timedelta(days=days)).strftime('%Y-%m-%d')
+    
+    # Intentar parsear formatos de fecha tradicionales
     date_formats = [
         '%Y-%m-%d',
         '%d/%m/%Y',
         '%d-%m-%Y',
         '%m/%d/%Y',
-        '%m-%d-%Y'
+        '%m-%d-%Y',
+        '%d/%m/%y',
+        '%d-%m-%y',
+        '%Y/%m/%d',
+        '%d de %B',  # "15 de agosto"
+        '%d %B',      # "15 agosto"
     ]
+    
+    # Mapeo de meses en español
+    spanish_months = {
+        'enero': 'January', 'febrero': 'February', 'marzo': 'March',
+        'abril': 'April', 'mayo': 'May', 'junio': 'June',
+        'julio': 'July', 'agosto': 'August', 'septiembre': 'September',
+        'octubre': 'October', 'noviembre': 'November', 'diciembre': 'December'
+    }
+    
+    # Reemplazar meses en español por inglés para el parsing
+    date_str_en = date_str
+    for spanish, english in spanish_months.items():
+        date_str_en = date_str_en.replace(spanish, english)
     
     for fmt in date_formats:
         try:
-            parsed_date = datetime.strptime(date_str, fmt)
+            parsed_date = datetime.strptime(date_str_en, fmt)
+            # Si no tiene año, asumimos el año actual
+            if '%Y' not in fmt and '%y' not in fmt:
+                parsed_date = parsed_date.replace(year=today.year)
+                # Si la fecha ya pasó este año, asumimos el próximo año
+                if parsed_date.date() < today.date():
+                    parsed_date = parsed_date.replace(year=today.year + 1)
             return parsed_date.strftime('%Y-%m-%d')
         except ValueError:
             continue
